@@ -1,4 +1,4 @@
-
+from __future__ import division
 import ast
 from ngram import nGram
 import math as calc
@@ -18,7 +18,7 @@ Response: she is a brilliant actress"""
 
     def loadDict(self):
         """Method to load dictionary from external data file."""
-        print("Loading dictionary from data file")
+        print "Loading dictionary from data file"
         f=open('dictionary.data', 'r')
         return f.read().split("\n")
     
@@ -229,4 +229,4 @@ while True:
             P.append('')
         correct = correct +P[0] +' '
         
-    print('Response: '+correct)
+    print 'Response: '+correct

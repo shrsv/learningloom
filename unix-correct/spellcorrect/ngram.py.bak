@@ -1,4 +1,4 @@
-
+from __future__ import division
 from collections import Counter
 import math as calc
 
@@ -22,11 +22,11 @@ Usage:
 
     def loadCorpus(self):
         """Method to load external file which contains raw corpus."""
-        print("Loading Corpus from data file")
+        print "Loading Corpus from data file"
         corpusfile = open('corpus.data', 'r')
         corpus = corpusfile.read()
         corpusfile.close()
-        print("Processing Corpus")
+        print "Processing Corpus"
         words = corpus.split(' ')
         return words
     
